@@ -3,16 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@nytimes/react-prosemirror": "^0.6.1",
+    "@remirror/extension-image": "^2.1.10",
+    "@remirror/pm": "^2.0.8",
+    "@remirror/react": "^2.0.35",
+    "@remirror/react-editors": "^1.0.41",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.89",
+    "@types/prosemirror-view": "^1.24.0",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.22",
+    "prosemirror-example-setup": "^1.2.2",
+    "prosemirror-model": "^1.19.4",
+    "prosemirror-schema-basic": "^1.2.2",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-suggest": "^2.0.6",
+    "prosemirror-view": "^1.33.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "remirror": "^2.0.39",
+    "styled-components": "^5.3.11",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -39,5 +55,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.34",
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
