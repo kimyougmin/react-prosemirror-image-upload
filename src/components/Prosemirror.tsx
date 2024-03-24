@@ -286,12 +286,12 @@ function Prosemirror(props: any) {
         // initial render
         const editorState = EditorState.create({
             doc: DOMParser.fromSchema(mySchema).parse(contentRef.current!),
-            // schema: mySchema,
+            schema: mySchema,
             // doc: ProsemirrorNode.fromJSON(schema, {
             //   type: "doc",
             //   content: [{ type: "paragraph" }]
             // }),
-            plugins: exampleSetup({ schema: schema }).concat([
+            plugins: exampleSetup( { schema } ).concat([
                 placeholderPlugin,
                 reactProps(props)
             ])
@@ -307,7 +307,7 @@ function Prosemirror(props: any) {
                 }
             })
         );
-        console.log(view?.state)
+        console.log('editorRef', editorRef)
     }, []);
 
     useEffect(() => {
